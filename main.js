@@ -55,3 +55,7 @@ moeCoin.addBlock(new Block(3, "04/01/2020", { amount: 999 }))
 // console.log(JSON.stringify(moeCoin, null, 4))
 
 console.log("Is Block chain valid?", moeCoin.isChainValid())
+
+moeCoin.chain[1].data = { amount: 3001 }
+
+console.log("Is Block chain valid?", moeCoin.isChainValid())
